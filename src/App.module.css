@@ -1,0 +1,161 @@
+.header {
+    background: var(--gray-700);
+    flex: 1;
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    gap: 1rem;
+
+    color: var(--blue);
+}
+
+.header>div {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    gap: 0.5rem;
+}
+
+.header span {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.header span:last-child {
+    color: var(--purple-dark);
+}
+
+.header p {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.body {
+    padding: 0 1rem;
+}
+
+form {
+    width: 100%;
+    max-width: 736px;
+
+    height: 54px;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: -25px;
+}
+
+form>input {
+    width: calc(100% - 100px);
+    background: var(--gray-500);
+    color: var(--gray-100);
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 1rem;
+    font-size: 1rem;
+
+    outline: none;
+}
+
+form>input:focus {
+    outline: 1px solid var(--purple-dark);
+}
+
+form>button {
+    background: var(--blue-dark);
+    height: 52px;
+    width: 90px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color, 0.2s;
+}
+
+form>button:hover {
+    cursor: pointer;
+    background: var(--blue);
+}
+
+.todoInfo {
+    width: 100%;
+    max-width: 736px;
+
+    padding-bottom: 1.5rem;
+    margin: 4rem auto 1rem;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.todoInfo p {
+    color: var(--blue);
+    font-weight: bold;
+    display: inline;
+}
+
+.todoLength {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-weight: bold;
+}
+
+.todoListEmpty {
+    width: 100%;
+    max-width: 736px;
+    margin: auto;
+    text-align: center;
+
+    padding: 4rem 1.5rem;
+
+
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+}
+
+.todoListEmpty {
+    line-height: 140%;
+    color: var(--gray-300);
+}
+
+.todoListEmpty>p {
+    font-weight: bold;
+}
+
+.todoList {
+    width: 100%;
+    max-width: 736px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
